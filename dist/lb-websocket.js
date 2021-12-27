@@ -3,7 +3,7 @@
  * Author: Christina K. (christinna9031)
  * License: MIT
  * Repository: https://github.com/lioranboard/lioranboard-websocket-js
- * Build Timestamp: 2021-12-23T11:43:19.873Z
+ * Build Timestamp: 2021-12-27T21:08:53.976Z
  */
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
@@ -302,7 +302,7 @@ class Socket extends EventEmitter {
         let err;
         let data;
 
-        if (message.status === '404.0') {
+        if (message.status === 404.0) {
           err = message.error;
         } else {
           data = message;
